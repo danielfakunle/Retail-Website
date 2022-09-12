@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Uzochi Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/851381af39.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="events-header">
+        <nav>
+            <a href="index.html"><img src="images_modified/logo_white.svg" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="retail.html">RETAIL</a></li>
+                    <li><a href="ice-block.html">ICE BLOCK</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Events</h1>
+    </section> 
+
+    <!-- events content -->
+    <section class="events">
+        <p>We also offer delivery for our consumable products, such as drinks and snacks, along with our other services. These items can be delivered when you want, wherever you want them, and we guarantee the quality of our offerings. Contact us for more details.</p>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+        <div class="row">
+            <div class="services-col">
+                <a href="retail.html">
+                    <img src="images_modified/retail.jpg" alt="">
+                    <div class="layer">
+                        <h3>RETAIL</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="services-col">
+                <a href="ice-block.html">
+                    <img src="images_modified/iceblock.jpg" alt="">
+                    <div class="layer">
+                        <h3>ICE BLOCK</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="services-col">
+                <a href="events.html">
+                    <img src="images_modified/events.jpg" alt="">
+                    <div class="layer">
+                        <h3>EVENTS</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- footer -->
+    <footer class="footer-back">
+        <section class="footer">
+            <h4>About Us</h4>
+            <div class="about-info">
+                <p>After it’s founding in 2019, Uzochi Store has been committed to delivering the most convenient and satisfying experience for all customers alike. We intend to continue our distribution line and would stop at nothing to become the no. 1 retail store in Nigeria.</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="retail.html">RETAIL</a></li>
+                    <li><a href="ice-block.html">ICE BLOCK</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="icons">
+                <a href="https://www.facebook.com/Uzochi-Store-108276830599827/" target="#"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p>Uzochi Store © All rights Reserved</p>
+        
+        </section>
+    </footer>
+
+    <!-- JavaScript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
